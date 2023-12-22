@@ -4,13 +4,50 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:foregroundTint="#FFFFFF"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="41dp"
-        tools:layout_editor_absoluteY="69dp" />
+    <EditText
+        android:id="@+id/edPassword"
+        android:layout_width="338dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/color"
+        android:ems="10"
+        android:hint="пароль"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edName" />
+
+    <EditText
+        android:id="@+id/edName"
+        android:layout_width="332dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="139dp"
+        android:layout_marginEnd="29dp"
+        android:background="@drawable/color"
+        android:ems="10"
+        android:foregroundTint="#FFFFFF"
+        android:hint="логин"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnReg"
+        android:layout_width="330dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="38dp"
+        android:text="зарегестрироваться"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edPassword" />
 </androidx.constraintlayout.widget.ConstraintLayout>
